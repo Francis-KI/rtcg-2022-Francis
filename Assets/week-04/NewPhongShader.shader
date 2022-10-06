@@ -9,6 +9,9 @@ Shader "Unlit/NewPhongShader"
         _DiffuseIntensity("Diffuse intensity", Range(0,1)) = 0.5
         // TODO add the 'Specular intensity' and the 'Specular exponent' properties 
         // use the properties above as a reference
+        _SpecularIntensity("Specular Intensity", range(0,1)) = 0.5
+        _SpecularExponent("Specular Exponent", range(0,100)) = 2
+        _SpecularColor("Specular Color", Color) = (1,1,1,1)
 
     }
     SubShader
@@ -51,9 +54,12 @@ Shader "Unlit/NewPhongShader"
             float4 _AmbientColor;
             float _AmbientIntensity;
             float _DiffuseIntensity;
-            // TODO add variables for 'Specular intensity' and the 'Specular exponent' properties 
+            // TODO add variables for 'Specular intensity' and the 'Specular exponent' properties
             // remember that names must match, use the variables above as a reference
-
+            float _SpecularIntensity;
+            float _SpecularExponent;
+            float4 _SpecularColor;
+            
             float4 _MainTex_ST;
 
             v2f vert (appdata v)
@@ -88,7 +94,7 @@ Shader "Unlit/NewPhongShader"
                 // you will need to compute the half vector
                 // you will need the 'pow' (power), 'dot', and 'max' functions.
                 // search the hlsl decomentation to learn how to use it if necessary
-
+                float specular = _SpecularIntensity * _SpecularColor * pow(max(0, dot(normal, normalize(lightDirection + view))), _SpecularExponent);
 
 
 
@@ -98,7 +104,7 @@ Shader "Unlit/NewPhongShader"
                 // combine color and intensity to create the lighting effect, currently we only have diffuse lighting
                 // TODO add the ambient contribution
                 // TODO add the specular contribution        
-                outColor.rgb = diffuse * color.rgb * _LightColor0.rgb;
+                outColor.rgb = diffuse * color.rgb * _LightColor0.rgb + color * _AmbientIntensity * _AmbientColor + specular;
 
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, outColor);
