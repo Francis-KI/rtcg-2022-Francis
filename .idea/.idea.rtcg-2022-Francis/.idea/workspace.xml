@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="727d0b7a-e2f5-4e65-9a99-445339fb069f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/week-03/NewCelMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/week-03/NewCelMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/week-03/ShaderExamples.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/week-03/ShaderExamples.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/week-04/NewPhongMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/week-04/NewPhongMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/week-04/NewPhongShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/week-04/NewPhongShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.rtcg-2022-Francis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rtcg-2022-Francis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/week-04/MyPhongReflectionShaderGraph.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/week-04/MyPhongReflectionShaderGraph.shadergraph.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/boot.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +72,7 @@
       <workItem from="1663675975252" duration="1630000" />
       <workItem from="1663841938804" duration="158000" />
       <workItem from="1664282046893" duration="2443000" />
+      <workItem from="1665472841708" duration="3324000" />
     </task>
     <servers />
   </component>
